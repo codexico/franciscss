@@ -10,7 +10,7 @@
 
 > Styling CSS without losing your Maintainability
 
-Maintainable System for CSS Stylesheet Structure.<br>
+Maintainable and Easy System for CSS Stylesheet Structure.<br>
 A set of simple ideas to guide your process of building maintainable CSS.
 
 Introduction
@@ -22,7 +22,7 @@ Any CSS greater than 1000 lines will get unwieldy. You'll eventually run into th
 * "Is this class still being used?"
 * "If I make a new class `green`, will there be a clash?"
 
-**franciscss** is an attempt to make sense of all these and be easy to maintain.
+**franciscss** is an attempt to make sense of all these and be *easy* to *maintain*.
 It is not a framework. It's simply a set of ideas to guide your process of building maintainable CSS for any modern website or application.
 
 
