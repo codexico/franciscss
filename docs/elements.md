@@ -5,13 +5,22 @@ Elements are things inside your component.
 ![](images/component-elements.png)
 
 ## Naming elements
-Each component may have elements. They should have classes that are only **one word**.
+Each component may have elements.
+
+The elements are separated from the components with a dash.
+They can be named with **one or more words**, separated by an __underscore__.
 
 ```scss
-.search-form {
-  > .field { /* ... */ }
-  > .action { /* ... */ }
-}
+.component { /* ... */ } // component
+.component-element { /* ... */ } // element
+.component_name-element_name { /* ... */ } // more words
+.component_name-another_element { /* ... */ } // more words
+```
+
+```scss
+.field_action { /* ... */ } // component
+.field_action-input { /* ... */ } // element
+.field_action-button-search { /* ... */ } // element
 ```
 
 ## Element selectors
