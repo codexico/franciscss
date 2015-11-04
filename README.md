@@ -1,16 +1,16 @@
-##### Viewing this from GitHub? Visit the website for the full experience. **[rscss.io →](http://rscss.io)**
+##### Viewing this from GitHub? Visit the original website for the full experience. **[rscss.io →](http://rscss.io)**
 <!-- {h5: style='display:none'} -->
 
 ----
 <!-- {hr: style='display:none'} -->
 
-# rscss
+# franciscss
 
 <!-- {h1:.massive-header.-with-tagline} -->
 
-> Styling CSS without losing your sanity
+> Styling CSS without losing your Maintainability
 
-Reasonable System for CSS Stylesheet Structure.<br>
+Maintainable System for CSS Stylesheet Structure.<br>
 A set of simple ideas to guide your process of building maintainable CSS.
 
 Introduction
@@ -22,7 +22,8 @@ Any CSS greater than 1000 lines will get unwieldy. You'll eventually run into th
 * "Is this class still being used?"
 * "If I make a new class `green`, will there be a clash?"
 
-**rscss** is an attempt to make sense of all these. It is not a framework. It's simply a set of ideas to guide your process of building maintainable CSS for any modern website or application.
+**franciscss** is an attempt to make sense of all these and be easy to maintain.
+It is not a framework. It's simply a set of ideas to guide your process of building maintainable CSS for any modern website or application.
 
 Let's get started by learning about components.
 [Continue →](docs/components.md)
@@ -30,6 +31,8 @@ Let's get started by learning about components.
 
 ----
 <!-- {hr: style='display:none'} -->
+
+### Forked from:
 
 **rscss** © 2015+, Rico Sta. Cruz. Released under the [MIT] License.<br>
 Authored and maintained by Rico Sta. Cruz with help from contributors ([list][contributors]).
