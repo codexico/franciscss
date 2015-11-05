@@ -24,35 +24,50 @@ They can be named with **one or more words**, separated by an __underscore__.
 ```
 
 ## Element selectors
-Prefer to use the `>` child selector whenever possible. This prevents bleeding through nested components, and performs better than descendant selectors.
+Try not to nest your css selectors.
+Just because you can in scss, doesn't mean you should.
+
+From the [sass-lang](http://sass-lang.com/guide) site:
+> Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
+
+**Don't do this:**
 
 ```scss
 .article-card {
-  .title     { /* okay */ }
-  > .author  { /* ✓ better */ }
+  > .author  { /*  bad */ }
+  .title  { /* worst */ }
 }
 ```
 
-## On multiple words
-For those that need two or more words, concatenate them without dashes or underscores.
+> Question:
 
-```scss
-.profile-box {
-  > .firstname { /* ... */ }
-  > .lastname { /* ... */ }
-  > .avatar { /* ... */ }
-}
-```
+> You cant change the original css, how do you change the .title font-size?
+
+> ```css
+> .article-card.author .title  { /* */ }
+> ```
+
+> And if the css was like this?
+
+> ```css
+> .article_card-title  { /* */ }
+> ```
+> **Better, right?**
+
+
+With legacy code this happens all the time!
+
 
 ## Avoid tag selectors
-Use classnames whenever possible. Tag selectors are fine, but they may come at a small performance penalty and may not be as descriptive.
+Use classes whenever possible.
 
-```scss
-.article-card {
-  > h3    { /* ✗ avoid */ }
-  > .name { /* ✓ better */ }
-}
-```
+Not for performance or whatever others say.
+
+Its about maintainability! Always!
+
+How many times you have to change a h2 to h3? Or span to a, or ul,li to div, p and vice-versa.
+
+----
 
 Not all elements should always look the same. Variants can help.
 [Continue →](variants.md)
